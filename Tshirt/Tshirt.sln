@@ -5,11 +5,11 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TshirtWeb", "TshirtWeb\TshirtWeb.csproj", "{917FC789-72D0-442E-8AE9-00E9FF4DAE50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T-shirt.Data", "T-shirt.Data\T-shirt.Data.csproj", "{34E8CB90-1852-4225-8252-1633485D4808}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T-shirt.Data", "T-shirt.Data\T-shirt.Data.csproj", "{34E8CB90-1852-4225-8252-1633485D4808}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T-shirt.Models", "T-shirt.Models\T-shirt.Models.csproj", "{014235C8-CE8C-4D32-AA22-D567D9737AD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T-shirt.Models", "T-shirt.Models\T-shirt.Models.csproj", "{014235C8-CE8C-4D32-AA22-D567D9737AD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T-shirt.Utility", "T-shirt.Utility\T-shirt.Utility.csproj", "{55FBA76E-0700-451F-8B77-6B7E4C58BB17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T-shirt.Utility", "T-shirt.Utility\T-shirt.Utility.csproj", "{55FBA76E-0700-451F-8B77-6B7E4C58BB17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
