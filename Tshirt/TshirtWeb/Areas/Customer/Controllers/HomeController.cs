@@ -1,4 +1,4 @@
-﻿namespace TshirtStoreWeb.Areas.Customer.Controllers
+﻿namespace TshirtWeb.Areas.Customer.Controllers
 {
 
     using Microsoft.AspNetCore.Mvc;

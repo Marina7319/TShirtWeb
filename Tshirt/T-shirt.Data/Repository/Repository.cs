@@ -42,10 +42,10 @@
         public IEnumerable<T> GetAll()
         {
 
-            IQueryable<T> query = dbSet;
-          
-            return query.ToList();
+             IQueryable<T> query = dbSet;
 
+             return query.ToList();
+           // return null;
         }
 
         public void Remove(T entity)

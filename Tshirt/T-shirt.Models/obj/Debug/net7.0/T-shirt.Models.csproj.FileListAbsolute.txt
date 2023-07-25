@@ -10,3 +10,5 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Models\obj\
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Models\obj\Debug\net7.0\refint\T-shirt.Models.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Models\obj\Debug\net7.0\T-shirt.Models.pdb
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Models\obj\Debug\net7.0\ref\T-shirt.Models.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Models\bin\Debug\net7.0\T-shirt.Models.runtimeconfig.json
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Models\obj\Debug\net7.0\T-shirt.Models.genruntimeconfig.cache

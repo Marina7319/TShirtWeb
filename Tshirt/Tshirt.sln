@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TshirtStoreWeb", "TshirtWeb\TshirtStoreWeb.csproj", "{917FC789-72D0-442E-8AE9-00E9FF4DAE50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TshirtWeb", "TshirtWeb\TshirtWeb.csproj", "{917FC789-72D0-442E-8AE9-00E9FF4DAE50}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T-shirt.Data", "T-shirt.Data\T-shirt.Data.csproj", "{34E8CB90-1852-4225-8252-1633485D4808}"
 EndProject

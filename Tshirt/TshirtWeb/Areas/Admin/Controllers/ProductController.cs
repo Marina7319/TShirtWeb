@@ -1,4 +1,4 @@
-﻿namespace TshirtStoreWeb.Areas.Admin.Controllers
+﻿namespace TshirtWeb.Areas.Admin.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
     using T_shirt.Data.Repository.IRepository;

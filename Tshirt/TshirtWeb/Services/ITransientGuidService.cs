@@ -1,4 +1,4 @@
-﻿namespace TshirtStoreWeb.Services
+﻿namespace TshirtWeb.Services
 {
     public interface ITransientGuidService
     {

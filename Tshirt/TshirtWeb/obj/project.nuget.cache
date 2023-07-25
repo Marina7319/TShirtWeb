@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9pV6VxnUe2Jo2W07AohdPVQ4WM0C3AtiSUJGz2L7TjSsdm0JbGYyhR5H3s/zyaEO0E6LAuWyIgVi/j54bAuaJg==",
+  "dgSpecHash": "S6DX3tl8Dy/lUlv/ZfBsTn6YdhlYyuVguBJyhmxxI9iw7oWljZTA0r0hFLuCiijqTCaRSGYjjWtl+uVqSecHNA==",
   "success": true,
-  "projectFilePath": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\TshirtStoreWeb.csproj",
+  "projectFilePath": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\TshirtWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marina\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

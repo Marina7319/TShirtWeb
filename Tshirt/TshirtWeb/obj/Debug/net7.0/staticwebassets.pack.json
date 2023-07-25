@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TshirtStoreWeb.bundle.scp.css",
-      "PackagePath": "staticwebassets\\TshirtStoreWeb.bundle.scp.css"
+      "Id": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TshirtWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TshirtWeb.bundle.scp.css"
     },
     {
       "Id": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TshirtStoreWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TshirtWeb.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TshirtStoreWeb.props",
-      "PackagePath": "build\\TshirtStoreWeb.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TshirtWeb.props",
+      "PackagePath": "build\\TshirtWeb.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TshirtStoreWeb.props",
-      "PackagePath": "buildMultiTargeting\\TshirtStoreWeb.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TshirtWeb.props",
+      "PackagePath": "buildMultiTargeting\\TshirtWeb.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TshirtStoreWeb.props",
-      "PackagePath": "buildTransitive\\TshirtStoreWeb.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TshirtWeb.props",
+      "PackagePath": "buildTransitive\\TshirtWeb.props"
     }
   ],
   "ElementsToRemove": []
