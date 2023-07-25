@@ -60,6 +60,94 @@ namespace T_shirt.Data.Migrations
                             Name = "History"
                         });
                 });
+
+            modelBuilder.Entity("T_shirt.Models.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("ListPrice")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Size")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TshirtName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Color = "Green",
+                            Description = "High quality printed t-shirt. Made of 100% cotton, soft and comfortable to wear. DTG printing of the prints - they don't stay like patches, they don't peel and they don't crack. Free customization. Inspection included upon delivery. ",
+                            ListPrice = 28.899999999999999,
+                            Size = "XS, S, M, L, XL, XXL",
+                            TshirtName = "Men T-shirt Awesome Since 1982"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Color = "Black",
+                            Description = "If you're a fan of the hilarious sitcom Friends, then you'll love this cool t-shirt from Plastic Head. It has a wonderful design that is inspired by iconic elements associated with the beloved series. The series, which follows the six inseparable friends, has become one of the most loved comedy series of all time. The sitcom follows their daily lives, the development of their relationships, their professional and personal lives, with a mixture of joys and disappointments.\r\n\r\nThe t-shirt is unisex and made of cotton. It is soft, comfortable and available in different sizes. The t-shirt is officially licensed and will become a great addition to any Friends collection and wardrobe.\r\n\r\n",
+                            ListPrice = 19.989999999999998,
+                            Size = "XS, S, M, L, XL, XXL",
+                            TshirtName = "T-shirt Plastic Head Television: Friends - Icons"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Color = "Pink, White",
+                            Description = "",
+                            ListPrice = 23.809999999999999,
+                            Size = "S, M, L",
+                            TshirtName = "Lola Bunny Dreams Women's T-Shirt* DTG"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Color = "pink, Yellow",
+                            Description = "High quality printed t-shirt. Made of 100% cotton, soft and comfortable to wear. DTG printing of the prints - they don't stay like patches, they don't peel and they don't crack. Free customization. Inspection included upon delivery. ",
+                            ListPrice = 23.809999999999999,
+                            Size = "S, M, L",
+                            TshirtName = "Women's Butterfly 2022 DTG T-Shirt"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Color = "Black",
+                            Description = "Men's T-Shirt The Game (Squid Game)\r\nThe newest addition to our series fan t-shirts collection!",
+                            ListPrice = 28.899999999999999,
+                            Size = "XS, S, M, L, XL, XXL",
+                            TshirtName = "Men's T-Shirt The Game (Squid Game)"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Color = "White",
+                            Description = "",
+                            ListPrice = 23.809999999999999,
+                            Size = "S, M, L",
+                            TshirtName = "Women's Powerpuff Girls / Buttercup DTG T-Shirt"
+                        });
+                });
 #pragma warning restore 612, 618
         }
     }

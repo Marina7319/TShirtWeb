@@ -1,0 +1,65 @@
+﻿@model Product
+
+
+
+<div class="card shadow border-0 m-4">y
+    <div class="card-header bg-secondary bg-gradient m-lg-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-light py-2">Edit Product</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+      
+        <form method="post">
+    <input asp-formaction="Id" hidden />
+    <div class="border p-3 mt-4">
+        @*<div asp-validation-summary="ModelOnly"></div> *@
+      
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-light border form-control" style="width:150px">
+            Back to List
+        </a>
+            </div> <div class="form-floating py-2 col-12">   
+            <label  asp-for="TshirtName" class="ms-2"></label>
+            <input asp-for="TshirtName" type="text" class="form-control border-0 shadow" />
+            <span asp-validation-for="TshirtName" cladd="text-daner"></span>
+        </div>
+        <div class="form-floating py-2 col-12"> 
+            <label asp-for="Description" class="ms-2"></label>
+            <textarea asp-for="Description" type="text" class="form-control border-0 shadow"></textarea>
+            <span asp-validation-for="Description" cladd="text-daner"></span>
+        </div>
+                  <div class="form-floating py-2 col-12"> 
+            <label asp-for="Size" class="ms-2"></label>
+            <input asp-for="Size" type="text" class="form-control border-0 shadow" />
+            <span asp-validation-for="Size" cladd="text-daner"></span>
+        </div>
+                  <div class="form-floating py-2 col-12"> 
+            <label asp-for="Color" class="ms-2"></label>
+            <input asp-for="Color" type="text" class="form-control border-0 shadow" />
+            <span asp-validation-for="Color" cladd="text-daner"></span>
+        </div>
+                  <div class="form-floating py-2 col-12"> 
+            <label asp-for="ListPrice" class="ms-2"></label>
+            <input asp-for="ListPrice" type="text" class="form-control border-0 shadow" />
+            <span asp-validation-for="ListPrice" cladd="text-daner"></span>
+        </div>
+        </div>
+    </div>
+</form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

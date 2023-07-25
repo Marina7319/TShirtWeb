@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace T_shirt.Data.Repository.IRepository
+﻿namespace T_shirt.Data.Repository.IRepository
 {
+
+
+    using System.Linq.Expressions;
+
+
     public interface IRepository<T> where T : class
     {
         // T - Category 
@@ -16,7 +14,7 @@ namespace T_shirt.Data.Repository.IRepository
 
         void Add(T entity);
 
-        void Update(T entity);
+      //  void Update(T entity);
 
         void Remove(T entity);
 

@@ -1,4 +1,4 @@
-﻿namespace T_shirt.Utility
+﻿namespace T_shirtStore.Utility
 {
     public static class StaticDetails
     {

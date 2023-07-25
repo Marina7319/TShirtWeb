@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\T-shirt.Utility\\T-shirt.Utility.csproj",
-      "projectName": "T-shirt.Utility",
-      "projectPath": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\T-shirt.Utility\\T-shirt.Utility.csproj",
+      "projectUniqueName": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\T-shirt.Utility\\T-shirtStore.Utility.csproj",
+      "projectName": "T-shirtStore.Utility",
+      "projectPath": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\T-shirt.Utility\\T-shirtStore.Utility.csproj",
       "packagesPath": "C:\\Users\\Marina\\.nuget\\packages\\",
       "outputPath": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\T-shirt.Utility\\obj\\",
       "projectStyle": "PackageReference",

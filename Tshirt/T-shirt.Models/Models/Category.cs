@@ -1,8 +1,10 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-
-namespace  T_shirt.Models.Models
+﻿namespace  T_shirt.Models.Models
 {
+
+    using System.ComponentModel;
+
+    using System.ComponentModel.DataAnnotations;
+
     public class Category
     {
 

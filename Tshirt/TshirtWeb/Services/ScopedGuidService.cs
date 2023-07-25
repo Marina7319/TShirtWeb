@@ -1,4 +1,4 @@
-﻿namespace TshirtWeb.Services
+﻿namespace TshirtStoreWeb.Services
 {
     public class ScopedGuidService : IScopedGuidService
     {
