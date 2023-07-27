@@ -248,3 +248,17 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\T-shirt.Models.pdb
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\T-shirtStore.Utility.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\T-shirtStore.Utility.pdb
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\System.Web.Mvc.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\System.Web.Razor.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\System.Web.Helpers.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\System.Web.WebPages.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\obj\Debug\net7.0\TshirtWeb.MvcApplicationPartsAssemblyInfo.cs
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Mvc.ModelBinding.MultiParameter.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll

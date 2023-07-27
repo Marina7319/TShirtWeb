@@ -1,10 +1,10 @@
 ﻿namespace T_shirt.Data.Repository
 {
+
     using T_shirt.Data.Repository.IRepository;
+
     using T_shirt.Data.Data;
-    using T_shirt.Data.Repository.IRepository;
-
-
+ 
     public class UnitOfWork : IUnitOfWork
     {
 

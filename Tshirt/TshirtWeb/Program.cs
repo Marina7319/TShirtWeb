@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using T_shirt.Data.Data;
 using T_shirt.Data.Repository;
@@ -12,7 +13,8 @@ builder.Services.AddControllersWithViews();
 //builder.Services.AddSingleton<IScopedGuidService, ScopedGuidService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
       options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+builder.Services.AddDefaultIdentity<IdentityUser>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
 
