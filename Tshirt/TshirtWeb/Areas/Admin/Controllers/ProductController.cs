@@ -1,15 +1,19 @@
 ﻿namespace TshirtWeb.Areas.Admin.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
+    using System.Data;
     using T_shirt.Data.Repository.IRepository;
 
 
     using T_shirt.Models.Models;
     using T_shirt.Models.ViewModels;
+    using T_shirtStore.Utility;
 
     [Area("Admin")]
 
+    [Authorize(Roles = StaticDetails.roleAdmin)]
 
     public class ProductController : Controller
     {

@@ -12,7 +12,7 @@ namespace T_shirt.Models.Models
     {
 
         [Required]
-        public int Name { get; set; }
+        public string Name { get; set; }
 
         public string?  StreetAddress { get; set; }
 

@@ -1,13 +1,15 @@
 ﻿namespace TshirtWeb.Areas.Admin.Controllers
 {
-
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using T_shirt.Data.Repository.IRepository;
 
 
     using T_shirt.Models.Models;
+    using T_shirtStore.Utility;
 
     [Area("Admin")]
+    [Authorize(Roles = StaticDetails.roleAdmin)]
 
     public class CategoryController : Controller
     {
