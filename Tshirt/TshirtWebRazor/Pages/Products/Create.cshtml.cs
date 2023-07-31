@@ -1,5 +1,6 @@
-namespace TshirtWebRazor.Pages.Categories
+namespace TshirtWebRazor.Pages.Products
 {
+
     using Microsoft.AspNetCore.Mvc;
 
     using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -8,27 +9,25 @@ namespace TshirtWebRazor.Pages.Categories
 
     using TshirtWebRazor.Models;
 
-    [BindProperties]
-
     public class CreateModel : PageModel
     {
         private readonly ApplicationDbContext database;
 
-        public Category Category { get; set; }
+        public Product Product { get; set; }
         public CreateModel(ApplicationDbContext db)
         {
             database = db;
         }
         public void OnGet()
         {
-            
+
         }
 
         public IActionResult OnPost()
         {
-            database.Categories.Add(Category);
+            database.Products.Add(Product);
             database.SaveChanges();
-            TempData["success"] = "Category created successfully";
+            //TempData["success"] = "Category created successfully";
             return RedirectToPage("Index");
         }
     }

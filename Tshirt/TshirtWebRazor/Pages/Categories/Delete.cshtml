@@ -1,4 +1,6 @@
-﻿@model Category
+﻿@page
+@model TshirtWebRazor.Pages.Categories.DeleteModel
+
 
 <div>
    <div>
@@ -10,7 +12,7 @@
    </div>
    <div>
       <form method="post">
-         <input asp-formaction="Id" hidden />
+         <input asp-for="Category.Id" hidden />
          <div>
             <div class="text-center">
                <h3 class="display-6">Delete Category </h3>
@@ -19,20 +21,20 @@
             <div asp-validation-summary="ModelOnly"></div>
             *@
             <div>    
-               <label asp-for="Name"></label>
-               <input asp-for="Name" type="text" class="form-control" />
-               <span asp-validation-for="Name"></span>
+               <label  asp-for="Category.Name"></label>
+               <input asp-for="Category.Name" type="text" class="form-control" />
+               <span asp-validation-for="Category.Name"></span>
             </div>
             <div>  
-               <label asp-for="DisplayOrder"></label>
-               <input asp-for="DisplayOrder"  disabled  type="text" class="form-control" />
+               <label asp-for="Category.DisplayOrder"></label>
+               <input asp-for="Category.DisplayOrder"  disabled  type="text" class="form-control" />
             </div>
             <div role="group">
                <div>
                   <button type="submit"  style="width:150px" class="btn btn-outline-danger">Delete</button>
                </div>
                <div>
-                  <a asp-controller="Category" asp-action="Index" style="width:150px" class="btn btn-outline-secondary">
+                  <a asp-page="/categories/index" style="width:150px" class="btn btn-outline-secondary">
                   Back to List
                   </a>
                </div>
