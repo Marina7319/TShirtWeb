@@ -1,0 +1,39 @@
+﻿@page
+@model TshirtWebRazor.Pages.Categories.CreateModel
+
+
+      <form method="post" class="row">
+         <div>
+            @*
+            <div asp-validation-summary="ModelOnly"></div>
+            *@
+            <div>   
+               <label  asp-for="Category.Name"></label>
+               <input asp-for="Category.Name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+               <span asp-validation-for="Category.Name"></span>
+            </div>
+            <div> 
+               <label asp-for="Category.DisplayOrder" ></label>
+               <input asp-for="Category.DisplayOrder" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+               <span asp-validation-for="Category.DisplayOrder" ></span>
+            </div>
+            <div role="group">
+               <div>
+                  <button type="submit" style="width:150px" class="btn btn-outline-primary">Create</button>
+               </div>
+               <div>
+                  <a asp-page="/categories/index" style="width:150px" class="btn btn-outline-secondary">
+                  Back to List
+                  </a>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+</div>
+@section Scripts
+{
+@{
+<partial name="_ValidationScriptsPartial" />
+}
+}
