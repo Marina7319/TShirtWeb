@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using T_shirt.Models.Models;
-
-namespace T_shirt.Data.Repository.IRepository
+﻿namespace T_shirt.Data.Repository.IRepository
 {
+
+    using T_shirt.Models.Models;
+
     public interface IProductRepository : IRepository<Product>
     {
 

@@ -1,5 +1,4 @@
-﻿
-namespace T_shirt.Data.Repository
+﻿namespace T_shirt.Data.Repository
 {
 
     using T_shirt.Data.Data;

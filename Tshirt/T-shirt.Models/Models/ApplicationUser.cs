@@ -1,13 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace T_shirt.Models.Models
+﻿namespace T_shirt.Models.Models
 {
+
+    using Microsoft.AspNetCore.Identity;
+
+    using System.ComponentModel.DataAnnotations;
+
     public class ApplicationUser : IdentityUser
     {
 

@@ -1,11 +1,14 @@
 ﻿namespace TshirtWeb.Areas.Admin.Controllers
 {
+
     using Microsoft.AspNetCore.Authorization;
+
     using Microsoft.AspNetCore.Mvc;
+
     using T_shirt.Data.Repository.IRepository;
 
-
     using T_shirt.Models.Models;
+
     using T_shirtStore.Utility;
 
     [Area("Admin")]
@@ -15,7 +18,6 @@
     {
 
         private readonly IUnitOfWork _unitOfWork;
-
 
         public CategoryController(IUnitOfWork db)
         {
@@ -27,7 +29,9 @@
 
         public IActionResult Index()
         {
+
             List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
+
             return View(objCategoryList);
         }
 
@@ -54,25 +58,18 @@
             if (ModelState.IsValid)
             {
 
-
                 _unitOfWork.Category.Add(obj);
-
                 _unitOfWork.Save();
                 TempData["success"] = "Category created succeddsully";
                 return RedirectToAction("Index");
 
-
             }
-
             return View();
 
         }
 
-
-
         public IActionResult Edit(int? id)
         {
-
 
             if (id == null || id == 0)
             {
@@ -80,8 +77,6 @@
             }
 
             Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
-            // Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u =>u.Id == id);
-            // Category? categoryFromDb2 = _categoryRepository.Categories.Where(u => u.Id == id).FirstOrDefault();
 
             if (categoryFromDb == null)
             {
@@ -96,18 +91,12 @@
         public IActionResult Edit(Category obj)
         {
 
-
             if (ModelState.IsValid)
             {
-
-
                 _unitOfWork.Category.Update(obj);
-
                 _unitOfWork.Save();
                 TempData["success"] = "Category edited succeddsully";
                 return RedirectToAction("Index");
-
-
             }
 
             return View();
@@ -117,15 +106,12 @@
         public IActionResult Delete(int? id)
         {
 
-
             if (id == null || id == 0)
             {
                 return NotFound();
             }
 
             Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
-            //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u =>u.Id == id);
-            // Category? categoryFromDb2 = _db.Categories.Where(u => u.Id == id).FirstOrDefault();
 
             if (categoryFromDb == null)
             {
@@ -146,9 +132,7 @@
                 return NotFound();
             }
 
-
             _unitOfWork.Category.Remove(obj);
-
             _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");

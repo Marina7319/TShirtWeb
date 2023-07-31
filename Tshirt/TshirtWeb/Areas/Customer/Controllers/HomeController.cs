@@ -4,8 +4,11 @@
     using Microsoft.AspNetCore.Mvc;
 
     using System.Diagnostics;
+
     using T_shirt.Data.Repository.IRepository;
+
     using T_shirt.Models.Models;
+
     [Area("Customer")]
     public class HomeController : Controller
     {
@@ -17,7 +20,7 @@
         {
             _logger = logger;
             _unitOfWork = unitOfWork;
-         
+
         }
 
         public IActionResult Index()

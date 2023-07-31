@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
+﻿
 #nullable disable
 
 namespace T_shirt.Data.Migrations
 {
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class AddingImgUrlToDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

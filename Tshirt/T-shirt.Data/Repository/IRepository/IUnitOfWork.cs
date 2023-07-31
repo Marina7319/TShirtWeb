@@ -3,13 +3,13 @@
 
     using T_shirt.Data.Repository.IRepository;
 
-
-    public interface IUnitOfWork 
+    public interface IUnitOfWork
     {
 
-        ICategoryRepository Category
-        {  get; }
+        ICategoryRepository Category { get; }
+
         IProductRepository Product { get; }
+
         void Save();
 
     }

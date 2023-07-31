@@ -1,12 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.UI.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace T_shirt.Utility
+﻿namespace T_shirt.Utility
 {
+
+    using Microsoft.AspNetCore.Identity.UI.Services;
+
     public class EmailSender : IEmailSender
     {
         public Task SendEmailAsync(string email, string subject, string htmlMessage)
@@ -14,5 +10,4 @@ namespace T_shirt.Utility
             return Task.CompletedTask;
         }
     }
-
 }
