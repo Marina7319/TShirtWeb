@@ -1,36 +1,36 @@
 ﻿@model Category
 
-<div class="card shadow border-0 mt-4">
-   <div class="card-header bg-secondary bg-gradient m-lg-0 py-3">
+<div>
+   <div>
       <div class="row">
-         <div class="col-12 text-center">
-            <h2 class="text-light py-2">Edit Category</h2>
+         <div class="text-center">
+            <h2 class="display-5">Edit Category</h2>
          </div>
       </div>
    </div>
-   <div class="card-body p-4">
+   <div>
       <form method="post">
          <input asp-formaction="Id" hidden />
-         <div class="border p-3 mt-4">
+         <div>
             @*
             <div asp-validation-summary="ModelOnly"></div>
             *@
-            <div class="form-floating py-2 col-12">   
-               <label  asp-for="Name" class="ms-2"></label>
-               <input asp-for="Name" type="text" class="form-control border-0 shadow" />
-               <span asp-validation-for="Name" cladd="text-daner"></span>
+            <div>   
+               <label  asp-for="Name"></label>
+               <input asp-for="Name" type="text" class="form-control"  />
+               <span asp-validation-for="Name" ></span>
             </div>
-            <div class="form-floating py-2 col-12">   
-               <label  asp-for="DisplayOrder" class="ms-2"></label>
-               <input asp-for="DisplayOrder" type="text" class="form-control border-0 shadow" />
-               <span asp-validation-for="DisplayOrder" cladd="text-daner"></span>
+            <div>   
+               <label  asp-for="DisplayOrder"></label>
+               <input asp-for="DisplayOrder" type="text"  class="form-control" />
+               <span asp-validation-for="DisplayOrder"></span>
             </div>
-            <div class="row">
-               <div class="col-6 col-md-3">
-                  <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+            <div role="group">
+               <div>
+                  <button type="submit"  style="width:150px" class="btn btn-outline-primary">Update</button>
                </div>
-               <div class="col-6 col-md-3">
-                  <a asp-controller="Category" asp-action="Index" class="btn btn-light border form-control" style="width:150px">
+               <div >
+                  <a asp-controller="Category" asp-action="Index"  style="width:150px" class="btn btn-outline-secondary">
                   Back to List
                   </a>
                </div>

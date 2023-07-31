@@ -1,79 +1,80 @@
 ﻿@model ProductViewModel
 
-<div class="card shadow border-0 my-4">
-    <div class="card-header bg-secondary bg-gradient m-lg-0 py-3">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="text-light py-2">@(Model.Product.Id!=0?"Update":"Create") Product</h2>
+<div>
+    <div class="row">
+        <div class="text-center">
+            <div>
+                <h2 class="display-5">@(Model.Product.Id!=0?"Update":"Create") Product</h2>
             </div>
         </div>
     </div>
-    <div class="card-body p-4">
-        <form method="post" class="row" enctype="multipart/form-data">
+    <div>
+        <form method="post" enctype="multipart/form-data">
             <input asp-for="Product.Id" hidden />
              <input asp-for="Product.ImageUrl" hidden />
-    <div class="border p-3">
+    <div>
         @*<div asp-validation-summary="ModelOnly"></div> *@
-          <div class="form-floating py-2 col-12">   
-            <label  asp-for="Product.TshirtName" class="ms-2"></label>
-            <input asp-for="Product.TshirtName" type="text" class="form-control border-0 shadow"></input>
-            <span asp-validation-for="Product.TshirtName" cladd="text-daner"></span>
+          <div>   
+            <label  asp-for="Product.TshirtName"></label>
+            <input asp-for="Product.TshirtName" type="text" class="form-control" ></input>
+            <span asp-validation-for="Product.TshirtName"></span>
         </div>
-        <div class="py-2 col-12"> 
-            <label asp-for="Product.Description" class="ms-2"></label>
-            <textarea asp-for="Product.Description" type="text" class="form-control border-0 shadow"></textarea>
-            <span asp-validation-for="Product.Description" cladd="text-daner"></span>
+        <div > 
+            <label asp-for="Product.Description"></label>
+            <textarea asp-for="Product.Description" type="text" class="form-control" ></textarea>
+            <span asp-validation-for="Product.Description" ></span>
         </div>
    
-                  <div class="form-floating py-2 col-12"> 
-            <label asp-for="Product.Size" class="ms-2"></label>
-            <input asp-for="Product.Size" type="text" class="form-control border-0 shadow" />
-            <span asp-validation-for="Product.Size" cladd="text-daner"></span>
+                  <div> 
+            <label asp-for="Product.Size"></label>
+            <input asp-for="Product.Size" type="text" class="form-control" />
+            <span asp-validation-for="Product.Size" ></span>
         </div>
-                  <div class="form-floating py-2 col-12"> 
-            <label asp-for="Product.Color" class="ms-2"></label>
-            <input asp-for="Product.Color" type="text" class="form-control border-0 shadow" />
-            <span asp-validation-for="Product.Color" cladd="text-daner"></span>
+                  <div> 
+            <label asp-for="Product.Color" ></label>
+            <input asp-for="Product.Color" type="text" class="form-control" />
+            <span asp-validation-for="Product.Color" ></span>
         </div>
-                  <div class="form-floating py-2 col-12"> 
-            <label asp-for="Product.ListPrice" class="ms-2"></label>
-            <input asp-for="Product.ListPrice" type="text" class="form-control border-0 shadow" />
-            <span asp-validation-for="Product.ListPrice" cladd="text-daner"></span>
+                  <div > 
+            <label asp-for="Product.ListPrice" ></label>
+            <input asp-for="Product.ListPrice" type="text" class="form-control" />
+            <span asp-validation-for="Product.ListPrice" ></span>
         </div>
-        <div class="form-floating py-2 col-12"> 
-      
-            <select asp-for="@Model.Product.CategoryId" asp-items="@Model.CategoryList" class="form-select border-0 shadow" >
-            <option disabled selected>--Selected Category--</option>
+        <div> 
+      <label asp-for="Product.CategoryId">Category</label> <br />
+            <select asp-for="@Model.Product.CategoryId" asp-items="@Model.CategoryList" class="btn btn-secondary dropdown-toggle" >
+            <option disabled selected class="dropdown-menu">--Selected Category--</option>
             </select>
-                  <label asp-for="Product.CategoryId" class="ms-2"></label>
-            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                  
+            <span asp-validation-for="Product.CategoryId"></span>
         </div>
-                <div class="form-floating py-2 col-12"> 
-           
-            <input  type="file" name ="file" class="form-control border-0 shadow" />
-             <label asp-for="Product.ImageUrl" class="ms-2"></label>
+                <div> 
+           <label asp-for="Product.ImageUrl" ></label>
+            <input  type="file" name ="file" class="form-control" />
+             
            
         </div>
 
 
 
-        <div class="row pt-2">
-            <div class="col-6 col-md-3">
-                @if(Model.Product.Id  != 0)
+        <div>
+            <div role="group">
+               @if(Model.Product.Id  != 0)
                         {
-                            <button type="submit" class="btn btn-outline-primary" >Update</button>
+                            <button type="submit"  style="width:150px" class="btn btn-outline-primary">Update</button>
                             
                         }
                         else
                         {
-                            <button type="submit" class="btn btn-outline-primary" >Create</button>
+                            <button type="submit" style="width:150px" class="btn btn-outline-primary">Create</button>
                             
                         }
-            </div>
-            <div class="col-6 col-md-3">
-                <a asp-controller="Product" asp-action="Index" class="btn btn-light border form-control" style="width:150px">
-            Back to List
+           
+            <div>
+                <a asp-controller="Product" asp-action="Index"  style="width:150px" class="btn btn-outline-secondary">
+                 Back to List
         </a>
+            </div>
             </div>
         </div>
     </div>
