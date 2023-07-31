@@ -2,16 +2,12 @@
 @model TshirtWebRazor.Pages.Products.CreateModel
 
 
+ 
  <form method="post" class="row">
          <div>
             @*
             <div asp-validation-summary="ModelOnly"></div>
             *@
-                <div>   
-               <label  asp-for="Product.Id"></label>
-               <input asp-for="Product.Id" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-               <span asp-validation-for="Product.Id"></span>
-            </div>
             <div>   
                <label  asp-for="Product.TshirtName"></label>
                <input asp-for="Product.TshirtName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
@@ -22,27 +18,27 @@
                <input asp-for="Product.Description" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                <span asp-validation-for="Product.Description" ></span>
             </div>
-              <div> 
+             <div> 
                <label asp-for="Product.Size" ></label>
                <input asp-for="Product.Size" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                <span asp-validation-for="Product.Size" ></span>
             </div>
-              <div> 
+             <div> 
                <label asp-for="Product.Color" ></label>
                <input asp-for="Product.Color" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                <span asp-validation-for="Product.Color" ></span>
             </div>
-              <div> 
+             <div> 
                <label asp-for="Product.ListPrice" ></label>
                <input asp-for="Product.ListPrice" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                <span asp-validation-for="Product.ListPrice" ></span>
             </div>
-              <div> 
+             <div> 
                <label asp-for="Product.CategoryId" ></label>
                <input asp-for="Product.CategoryId" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                <span asp-validation-for="Product.CategoryId" ></span>
             </div>
-            <div> 
+             <div> 
                <label asp-for="Product.ImageUrl" ></label>
                <input asp-for="Product.ImageUrl" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                <span asp-validation-for="Product.ImageUrl" ></span>

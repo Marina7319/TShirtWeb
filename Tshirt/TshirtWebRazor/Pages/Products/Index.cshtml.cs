@@ -6,7 +6,6 @@ using TshirtWebRazor.Models;
 namespace TshirtWebRazor.Pages.Products
 {
 
-    [BindProperties]
 
     public class IndexModel : PageModel
     {

@@ -9,6 +9,7 @@ namespace TshirtWebRazor.Pages.Products
 
     using TshirtWebRazor.Models;
 
+    [BindProperties]
     public class CreateModel : PageModel
     {
         private readonly ApplicationDbContext database;
