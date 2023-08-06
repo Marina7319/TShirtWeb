@@ -1,5 +1,5 @@
 Този проект е website за Тениски. <br />
-<bold>Необходими инструменти:</bold> <br />
+<strong>Необходими инструменти:</strong> <br />
 •	Visual Studio 2022: https://visualstudio.microsoft.com/ <br />
 •	SQL Server 2022: https://www.microsoft.com/en-us/sql-server/sql-server-downloads <br />
 •	SQL Server Management Studio (SSMS): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16 <br />
