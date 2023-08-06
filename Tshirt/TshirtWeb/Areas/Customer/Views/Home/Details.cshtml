@@ -1,7 +1,7 @@
 ﻿@model Product
 
 <form method="post">
-   <div>
+   <div  class="text-center">
       <div>
          <div>
             <div>
@@ -49,22 +49,26 @@
                </div>
                <div>
                   <div>
-                     <div>
+                    <!-- <div>
                         <span id="inputGroup-sizing-default">
                         Count
                         </span>
                         <input type="number" value="1" class="fomr-control text-end"
                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                     </div>
+                     </div>-->
                   </div>
                </div>
                <div>
                   <div>
-                     <button type="submit" disabled class="btn btn-light" class="btn btn-light" >
+                     <button type="submit" disabled class="btn btn-light">
                      Add to Cart (Comming Soon...)
                      </button>
+                      <a asp-action="Details" asp-route-productId="@product.Id" class="btn btn-outline-primary"
+                     >
+                  Details
+                  </a> 
                   </div>
-               </div>
+               </div>            
             </div>
          </div>
       </div>

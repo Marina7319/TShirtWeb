@@ -1,14 +1,14 @@
-﻿namespace T_shirt.Data.Repository
+﻿using T_shirt.Data.Data;
+using T_shirt.Data.Repository.IRepository;
+
+namespace T_shirt.Data.Repository
 {
 
-    using T_shirt.Data.Repository.IRepository;
-
-    using T_shirt.Data.Data;
 
     public class UnitOfWork : IUnitOfWork
     {
 
-        public ApplicationDbContext _db;
+        public ApplicationDbContext database;
 
         public ICategoryRepository Category { get; private set; }
 
@@ -17,15 +17,15 @@
         public UnitOfWork(ApplicationDbContext db)
         {
 
-            _db = db;
-            Category = new CategoryRepository(_db);
-            Product = new ProductRepository(_db);
+            database = db;
+            Category = new CategoryRepository(database);
+            Product = new ProductRepository(database);
 
         }
 
         public void Save()
         {
-            _db.SaveChanges();
+            database.SaveChanges();
         }
 
     }

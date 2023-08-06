@@ -9,6 +9,10 @@
 
     using T_shirt.Models.Models;
 
+    using T_shirt.Data.Repository.IRepository;
+          
+    using T_shirt.Models.Models;
+          
     [Area("Customer")]
     public class HomeController : Controller
     {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GgdFHbu4WLHCAa2YJgQVbwGHVH6g7yWV/2AnW3DoaGVh17nETXQb/j7BmhiENK7171xNbhETcNWLhpjboXaOQw==",
+  "dgSpecHash": "ngehIZ5qQlFBIsuFRft9tkFAXF57yL6l0MqDGCuz6T5eBSWpcTrhXKfWzrbPSn+1Uq22UdE12MHhg+PrTg453Q==",
   "success": true,
   "projectFilePath": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\T-shirt.Data\\T-shirt.Data.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,7 @@
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.1.1\\microsoft.aspnetcore.http.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.1.1\\microsoft.aspnetcore.http.extensions.2.1.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.1\\microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512",
-    "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.20\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.20.nupkg.sha512",
+    "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.9\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.9.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.9\\microsoft.aspnetcore.identity.ui.7.0.9.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.1.1\\microsoft.aspnetcore.jsonpatch.2.1.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.1.3\\microsoft.aspnetcore.mvc.abstractions.2.1.3.nupkg.sha512",

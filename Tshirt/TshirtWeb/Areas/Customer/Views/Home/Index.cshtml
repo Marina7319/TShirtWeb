@@ -5,7 +5,7 @@
    {
    <div class="col">
       <div class="card h-100">
-         <div>
+         <div class="text-center">
             <div>
                <img class="card-img-top" src="@product.ImageUrl"  />
                <div class="card-body">
@@ -21,6 +21,12 @@
                   <a asp-action="Details" asp-route-productId="@product.Id" class="btn btn-outline-primary"
                      >
                   Details
+                  </a>             
+               </div>
+               <div>
+                  <a asp-action="" asp-route-productId="" class="btn btn-outline-primary"
+                     >
+                  Add to my T-shirts.
                   </a>             
                </div>
             </div>

@@ -25,7 +25,6 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.Build.dll
@@ -73,7 +72,6 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Newtonsoft.Json.dll
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\NuGet.Common.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\NuGet.Configuration.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
@@ -268,3 +266,5 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\obj\Debug
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\obj\Debug\net7.0\TshirtWeb.csproj.CopyComplete
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\obj\Debug\net7.0\TshirtWeb.genruntimeconfig.cache
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\obj\Debug\net7.0\ref\TshirtWeb.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
