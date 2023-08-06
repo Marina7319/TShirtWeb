@@ -1,7 +1,0 @@
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.ShoppingCart.Api\obj\Debug\net7.0\T-shirt.ShoppingCart.Api.csproj.AssemblyReference.cache
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.ShoppingCart.Api\obj\Debug\net7.0\T-shirt.ShoppingCart.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.ShoppingCart.Api\obj\Debug\net7.0\T-shirt.ShoppingCart.Api.AssemblyInfoInputs.cache
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.ShoppingCart.Api\obj\Debug\net7.0\T-shirt.ShoppingCart.Api.AssemblyInfo.cs
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.ShoppingCart.Api\obj\Debug\net7.0\T-shirt.ShoppingCart.Api.csproj.CoreCompileInputs.cache
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.ShoppingCart.Api\obj\Debug\net7.0\T-shirt.ShoppingCart.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.ShoppingCart.Api\obj\Debug\net7.0\T-shirt.ShoppingCart.Api.MvcApplicationPartsAssemblyInfo.cache
