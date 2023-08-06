@@ -42,10 +42,4 @@
 ![image](https://github.com/Marina7319/TShirtWeb/assets/100438974/94df644b-549f-4784-ae3c-235acf168bb4)
 
 
-•	Razor Views Create.cshtml, Delete.cshtml, Edit.cshtml, Index.cshtml, Index.cshtml и Update.cshtml файлове.
-![image](https://github.com/Marina7319/TShirtWeb/assets/100438974/01a76692-b4c9-4637-a075-afe3de024cd1)
-
-Изтриване на категорията.
-![image](https://github.com/Marina7319/TShirtWeb/assets/100438974/37984df9-383f-49aa-9051-87cacda0a9ba)
-
 
