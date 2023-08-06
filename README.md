@@ -4,13 +4,13 @@
 •	SQL Server 2022: https://www.microsoft.com/en-us/sql-server/sql-server-downloads <br />
 •	SQL Server Management Studio (SSMS): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16 <br />
 •	Windows 10 <br />
-Изисквания, за да се стартира проекта: <br />
+<strong>Изисквания, за да се стартира проекта: </strong> <br />
 •	Visual Studio 2022: https://visualstudio.microsoft.com/ <br />
 •	SQL Server 2022: https://www.microsoft.com/en-us/sql-server/sql-server-downloads <br />
 •	SQL Server Management Studio (SSMS): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16 <br />
 •	T-shirt Solution: https://github.com/Marina7319/TShirtWeb <br />
 •	Windows 10. <br />
-Файловете, който може да намерите в този проект: <br />
+<strong>Файловете, който може да намерите в този проект: </strong><br />
 •	MVC Controller HomeController.cs с методи Index(), Details(), Privacy()  и Error(). <br />
 •	Razor Views Index.cshtml, Details.cshtml и Privacy.cshtml файлове. <br />
 Екран с тениските видими за потребителите с името на тениската, цвета и цената. Бутони за Детайлите, Регистриране и Вписване на потребителите. <br />
