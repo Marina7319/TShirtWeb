@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\images\\product\\e9e581d0-3558-47fb-9ff5-c3bcbdb38311.jpg"
     },
     {
+      "Id": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
       "Id": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\js\\product.js",
       "PackagePath": "staticwebassets\\js\\product.js"
     },

@@ -12,7 +12,8 @@
     using T_shirt.Data.Repository.IRepository;
           
     using T_shirt.Models.Models;
-          
+ 
+
     [Area("Customer")]
     public class HomeController : Controller
     {
@@ -26,11 +27,13 @@
             _unitOfWork = unitOfWork;
 
         }
+    
 
         public IActionResult Index()
         {
             IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category");
             return View(productList);
+           
 
         }
 
@@ -50,5 +53,7 @@
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+      
     }
 }
