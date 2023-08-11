@@ -631,3 +631,5 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\TshirtWeb.pdb
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\T-shirt.Data.pdb
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\T-shirtStore.Utility.pdb
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\Castle.Core.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\Moq.dll

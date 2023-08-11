@@ -36,6 +36,7 @@
       "T-shirtApp.Test/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.3.2",
+          "Moq": "4.20.2",
           "NUnit": "3.13.2",
           "NUnit.Analyzers": "3.5.0",
           "NUnit3TestAdapter": "4.5.0",
@@ -195,7 +196,7 @@
           "System.Diagnostics.Contracts": "7.0.0.0",
           "System.Diagnostics.Debug": "7.0.0.0",
           "System.Diagnostics.DiagnosticSource.Reference": "7.0.0.0",
-          "System.Diagnostics.EventLog": "7.0.0.0",
+          "System.Diagnostics.EventLog.Reference": "7.0.0.0",
           "System.Diagnostics.FileVersionInfo": "7.0.0.0",
           "System.Diagnostics.Process": "7.0.0.0",
           "System.Diagnostics.StackTrace": "7.0.0.0",
@@ -379,6 +380,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Azure.Identity.dll": {}
+        }
+      },
+      "Castle.Core/5.1.1": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {}
         }
       },
       "coverlet.collector/3.1.2": {},
@@ -2568,6 +2583,20 @@
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
         }
       },
+      "Moq/4.20.2": {
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {
+            "assemblyVersion": "4.20.2.0",
+            "fileVersion": "4.20.2.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Moq.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -2842,6 +2871,7 @@
       },
       "System.Data.DataSetExtensions/4.5.0": {},
       "System.Diagnostics.DiagnosticSource/5.0.0": {},
+      "System.Diagnostics.EventLog/6.0.0": {},
       "System.Drawing.Common/6.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "6.0.0"
@@ -4079,7 +4109,7 @@
         },
         "compileOnly": true
       },
-      "System.Diagnostics.EventLog/7.0.0.0": {
+      "System.Diagnostics.EventLog.Reference/7.0.0.0": {
         "compile": {
           "System.Diagnostics.EventLog.dll": {}
         },
@@ -4928,6 +4958,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "Castle.Core/5.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "path": "castle.core/5.1.1",
+      "hashPath": "castle.core.5.1.1.nupkg.sha512"
     },
     "coverlet.collector/3.1.2": {
       "type": "package",
@@ -5993,6 +6030,13 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "Moq/4.20.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jJ/VSoq9rTLXAfqjJxaCJux1BB9CeqohVMott3WQCKYD7ojuegitumWrNHwrSRqad5Nmq95VNKLiNTmFeHnTjA==",
+      "path": "moq/4.20.2",
+      "hashPath": "moq.4.20.2.nupkg.sha512"
+    },
     "NETStandard.Library/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -6181,6 +6225,13 @@
       "sha512": "sha512-tCQTzPsGZh/A9LhhA6zrqCRV4hOHsK90/G7q3Khxmn6tnB1PuNU0cRaKANP2AWcF9bn0zsuOoZOSrHuJk6oNBA==",
       "path": "system.diagnostics.diagnosticsource/5.0.0",
       "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
     "System.Drawing.Common/6.0.0": {
       "type": "package",
@@ -7191,7 +7242,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Diagnostics.EventLog/7.0.0.0": {
+    "System.Diagnostics.EventLog.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

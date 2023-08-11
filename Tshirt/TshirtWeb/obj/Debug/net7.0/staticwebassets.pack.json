@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\error.html",
+      "PackagePath": "staticwebassets\\error.html"
+    },
+    {
       "Id": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

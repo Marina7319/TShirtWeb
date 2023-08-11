@@ -9,7 +9,7 @@ namespace T_shirt.Models.ViewModels
 {
     public class ShoppingCardViewModel
     {
-       // public IEnumerable<ShoppingCart> ShoppingCartList { get; set; }
-       // public OrderHeader OrderHeader { get; set; }
+        public IEnumerable<ShoppingCart> ShoppingCartList { get; set; }
+        public OrderHeader OrderHeader { get; set; }
     }
 }

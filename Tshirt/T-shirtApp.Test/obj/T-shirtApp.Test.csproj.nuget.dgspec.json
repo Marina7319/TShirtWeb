@@ -314,6 +314,10 @@
               "target": "Package",
               "version": "[17.3.2, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.2, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.2, )"
@@ -398,11 +402,11 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
