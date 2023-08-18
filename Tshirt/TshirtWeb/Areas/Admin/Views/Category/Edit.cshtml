@@ -7,7 +7,6 @@
 <div>
     @if(Model.Id != 0)
     {
-        //edit 
         title = "Edit Category";
     }
     <div>
@@ -41,16 +40,7 @@
                     else
                     {
                         <partial name="_CreateAndBackToListButton" />
-                    }
-              
-                    @*  <div>
-                  <button type="submit"  style="width:150px" class="btn btn-outline-primary">Update</button>
-               </div>
-               <div >
-                  <a asp-controller="Category" asp-action="Index"  style="width:150px" class="btn btn-outline-secondary">
-                  Back to List
-                  </a>
-               </div> *@
+                    }                       
             </div>
          </div>
       </form>

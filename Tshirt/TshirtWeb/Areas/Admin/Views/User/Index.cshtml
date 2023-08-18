@@ -1,36 +1,21 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
-
-
-
 <div style="width: 48rem;">
-<div>
-   <div>
-      <div class="text-center">
-         <h2 class="display-5">User`s T-shirt</h2>
+<div class="row">
+         <h2 class="text-primary">User`s T-shirt</h2>
       </div>
-   </div>
-</div>
-<div>
-   <div>
-      <div class="text-center">
-         <h2 class="display-6">
-            Category T-shirt List
-         </h2>
-      </div>
-    <div>
+      <div class="col-6 text-right">
          <a class="btn btn-outline-info" asp-area = "Identity" asp-page="/Account/Register" style="float: right;">
          <i class="bi bi-sign-intersection"></i> Create New Category 
          </a>
       </div>
    </div>
-   <table class="table table-striped">
+   <div class="p-4 border rounded">
+   <table id="tblData" class="table table-striped" style="width:100%">
       <thead class="table-light">
-         <tr>
+         <tr class="table-info">
             <th>
                 Name
             </th>
@@ -40,14 +25,15 @@
             <th>
                 Phone
             </th>
-
-            <th>
-                Role
-            </th> 
-         
+         <th>
+             Company
+             </th>
+         <th>
+             Role
+             </th>
          </tr>
       </thead>
-      <tbody> 
+ </table>
 </div>
 
 @section Scripts 

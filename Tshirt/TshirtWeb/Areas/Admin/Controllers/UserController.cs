@@ -1,29 +1,24 @@
 ﻿namespace TshirtWeb.Areas.Admin.Controllers
 {
 
-    using Microsoft.AspNetCore.Authorization;
-
     using Microsoft.AspNetCore.Mvc;
+
     using Microsoft.EntityFrameworkCore;
+
     using T_shirt.Data.Data;
-    using T_shirt.Data.Repository.IRepository;
 
     using T_shirt.Models.Models;
 
-    using T_shirtStore.Utility;
-
     [Area("Admin")]
-    [Authorize(Roles = StaticDetails.roleAdmin)]
-
     public class UserController : Controller
     {
 
-        private readonly TshirtStoreDbContext database;
+        private readonly TshirtStoreDbContext _database;
 
-        public UserController(TshirtStoreDbContext _database)
+        public UserController(TshirtStoreDbContext database)
         {
 
-            database = _database;
+            _database = database;
 
         }
 
@@ -45,9 +40,9 @@
 
         public IActionResult GetAll()
         {
-            var userList = database.ApplicationUsers.Include(u => u.Company).ToList();
-            var userRole = database.UserRoles.ToList();
-            var roles = database.Roles.ToList();
+            var userList = _database.ApplicationUsers.Include(u => u.Company).ToList();
+            var userRole = _database.UserRoles.ToList();
+            var roles = _database.Roles.ToList();
             foreach (var user in userList)
             {
                 var roleId = userRole.FirstOrDefault(u => u.UserId == user.Id).RoleId;
