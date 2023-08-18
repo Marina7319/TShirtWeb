@@ -27,9 +27,13 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
 
     using Microsoft.AspNetCore.WebUtilities;
 
+    using T_shirt.Data.Repository.IRepository;
+
     using T_shirt.Models.Models;
 
     using T_shirtStore.Utility;
+
+    using T_shirt.Data.Repository;
 
     public class RegisterModel : PageModel
     {
@@ -40,6 +44,7 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly IUnitOfWork _unitOfWork;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -47,7 +52,8 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IUnitOfWork unitOfWork)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -56,6 +62,7 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
             _logger = logger;
             _emailSender = emailSender;
             _roleManager = roleManager;
+            _unitOfWork = unitOfWork;
         }
 
         /// <summary>
@@ -118,11 +125,23 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
 
             [Required]
             public string Name { get; set; }
+
             public string? StreetAddress { get; set; }
+
             public string? City { get; set; }
+
             public string? State { get; set; }
+
             public string? PostalCode { get; set; }
+
             public string? PhoneNumber { get; set; }
+
+            public int? CompanyId { get; set; }
+
+            public IEnumerable<SelectListItem> CompanyList { get; set; }
+
+          //  public IEnumerable<SelectListItem> RoleList { get; set; }
+
         }
 
 
@@ -137,14 +156,15 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
                 _roleManager.CreateAsync(new IdentityRole(StaticDetails.roleCompany)).GetAwaiter().GetResult();
 
             }
+            ReturnUrl = returnUrl;
 
-            Input = new()
+            Input = new InputModel()
             {
                 RoleList = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
                 {
                     Text = i,
                     Value = i
-                })
+                })   
             };
 
             ReturnUrl = returnUrl;
@@ -158,22 +178,61 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = CreateUser();
+                //  var user = CreateUser();
+                //
+                //  await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+                //  await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+                //  user.StreetAddress = Input.StreetAddress;
+                //  user.City = Input.City;
+                //  user.Name = Input.Name;
+                //  user.State = Input.State;
+                //  user.PostalCode = Input.PostalCode;
+                //  user.PhoneNumber = Input.PhoneNumber;
 
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
-                await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-                user.StreetAddress = Input.StreetAddress;
-                user.City = Input.City;
-                user.Name = Input.Name;
-                user.State = Input.State;
-                user.PostalCode = Input.PostalCode;
-                user.PhoneNumber = Input.PhoneNumber;
+                
+              
+                    var user = new ApplicationUser
+                    {
+                        UserName = Input.Email,
+                        Email = Input.Email,
+                        CompanyId = Input.CompanyId,
+                        StreetAddress = Input.StreetAddress,
+                        City = Input.City,
+                        State = Input.State,
+                        PostalCode = Input.PostalCode,
+                        Name = Input.Name,
+                        PhoneNumber = Input.PhoneNumber,
+                        Role = Input.Role
+
+                    };
+                
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+                    if(!await _roleManager.RoleExistsAsync(StaticDetails.roleAdmin))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(StaticDetails.roleAdmin));
+                    }
+                    if (!await _roleManager.RoleExistsAsync(StaticDetails.roleEmployee))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(StaticDetails.roleEmployee));
+                    }
+                    if (!await _roleManager.RoleExistsAsync(StaticDetails.roleCompany))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(StaticDetails.roleCompany));
+                    }
+                    if (!await _roleManager.RoleExistsAsync(StaticDetails.roleEmployee))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(StaticDetails.roleEmployee));
+                    }
+                    if (!await _roleManager.RoleExistsAsync(StaticDetails.roleCustomer))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(StaticDetails.roleCustomer));
+                    }
 
+                    await _userManager.AddToRoleAsync(user, StaticDetails.roleAdmin);
                     if (!String.IsNullOrEmpty(Input.Role))
                     {
                         await _userManager.AddToRoleAsync(user, Input.Role);
@@ -184,17 +243,17 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
                     }
 
                     var userId = await _userManager.GetUserIdAsync(user);
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
-
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
+                   // var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                   // code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                   // var callbackUrl = Url.Page(
+                   //     "/Account/ConfirmEmail",
+                   //     pageHandler: null,
+                   //     values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
+                   //     protocol: Request.Scheme);
+                   //
+                   // await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
+                   //     $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                   //
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
                         return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });

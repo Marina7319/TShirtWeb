@@ -29,7 +29,7 @@
                      </li>
          
                                            
-                     @if (User.IsInRole(StaticDetails.roleAdmin))
+                     @if (User.IsInRole(StaticDetails.roleAdmin) || User.IsInRole(StaticDetails.roleAdmin))
                      {
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

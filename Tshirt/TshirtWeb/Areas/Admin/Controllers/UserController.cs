@@ -6,7 +6,7 @@
     using Microsoft.EntityFrameworkCore;
 
     using T_shirt.Data.Data;
-
+    using T_shirt.Data.Repository.IRepository;
     using T_shirt.Models.Models;
 
     [Area("Admin")]
@@ -14,8 +14,8 @@
     {
 
         private readonly TshirtStoreDbContext _database;
-
-        public UserController(TshirtStoreDbContext database)
+ 
+        public UserController(TshirtStoreDbContext database) 
         {
 
             _database = database;
@@ -25,10 +25,6 @@
 
         public IActionResult Index()
         {
-
-            //  List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
-
-            //return View(objCategoryList);
             return View();
         }
 

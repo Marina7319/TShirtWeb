@@ -20,9 +20,9 @@ namespace T_shirt.Data.Repository
 
 
 
-        public void Update(Company obj)
+        public void Update(Company company)
         {
-            _db.Companies.Update(obj);
+            _db.Update(company);
         }
     }
 }

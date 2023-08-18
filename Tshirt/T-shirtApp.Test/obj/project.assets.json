@@ -731,6 +731,38 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Facebook/7.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.AspNetCore.Authentication.Google/7.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authorization/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -3990,6 +4022,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Facebook": "7.0.10",
+          "Microsoft.AspNetCore.Authentication.Google": "7.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Microsoft.AspNetCore.Identity.UI": "7.0.10",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "7.0.10",
@@ -4930,6 +4964,36 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.xml",
         "microsoft.aspnetcore.authentication.core.2.1.1.nupkg.sha512",
         "microsoft.aspnetcore.authentication.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/7.0.10": {
+      "sha512": "7Grmb7ABKnFJiHY1SlRhwF89cyxmb6Tpu06mTV1PQK+mFW50BWjVyriXo14WxsjlbPTty3bWxBXKGUUYnvxJlg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.facebook/7.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.xml",
+        "microsoft.aspnetcore.authentication.facebook.7.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.facebook.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/7.0.10": {
+      "sha512": "HwB4AjAzp+wn5fglKUr0FB6uIDTXrBX3m0UiLSpVzZZJQOAYOwJfC6eVcSlGXc+NysQQ4fhR2+L0BDx0zI1NzQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/7.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.7.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authorization/2.1.1": {

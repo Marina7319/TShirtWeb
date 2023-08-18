@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+zyN1PGO9ZqoQqE2yjDUsYP+/q9y3Ng4DNN82aEJ7/OuvkSMnCDieJGJxVHkQknAGuzxYZiXqNkodJpZeQ7Whg==",
+  "dgSpecHash": "NPtqnmq9r5fVibh8kQtvbiz4nrDzwK+VvI8EXo9yxFXFDzkjeo/AarJyEH1HYPMsZLJWMFuDxMMAt27XpGIOJA==",
   "success": true,
   "projectFilePath": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\TshirtWeb.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,8 @@
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.1\\microsoft.aspnetcore.authentication.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.1\\microsoft.aspnetcore.authentication.core.2.1.1.nupkg.sha512",
+    "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\7.0.10\\microsoft.aspnetcore.authentication.facebook.7.0.10.nupkg.sha512",
+    "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.10\\microsoft.aspnetcore.authentication.google.7.0.10.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.1.1\\microsoft.aspnetcore.authorization.2.1.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.1.1\\microsoft.aspnetcore.authorization.policy.2.1.1.nupkg.sha512",
     "C:\\Users\\Marina\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.10\\microsoft.aspnetcore.cryptography.internal.7.0.10.nupkg.sha512",
