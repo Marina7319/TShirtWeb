@@ -15,7 +15,7 @@ namespace T_shirt.Data.Migrations
 
     using T_shirt.Data.Data;
 
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(TshirtStoreDbContext))]
     [Migration("20230724182429_AddCategoryToDbAndSeedTable")]
     partial class AddCategoryToDbAndSeedTable
     {

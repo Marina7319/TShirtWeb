@@ -10,11 +10,11 @@
     public class CategoryRepository : Repository<Category>, ICategoryRepository 
     {
 
-        private readonly ApplicationDbContext _db;
+        private readonly TshirtStoreDbContext database;
 
-        public CategoryRepository(ApplicationDbContext db) : base(db)
+        public CategoryRepository(TshirtStoreDbContext db) : base(db) //CategoryRepository
         {
-            _db = db;
+            database = db;
         }
 
         public void Save()
@@ -22,9 +22,9 @@
             throw new NotImplementedException();
         }
 
-        public void Update(Category obj)
+        public void Update(Category obj) // Update
         {
-            _db.Categories.Update(obj);
+            database.Categories.Update(obj);
         }
     }
 }

@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+
+<div style="width: 48rem;">
+<div>
+   <div>
+      <div class="text-center">
+         <h2 class="display-5">User`s T-shirt</h2>
+      </div>
+   </div>
+</div>
+<div>
+   <div>
+      <div class="text-center">
+         <h2 class="display-6">
+            Category T-shirt List
+         </h2>
+      </div>
+    <div>
+         <a class="btn btn-outline-info" asp-area = "Identity" asp-page="/Account/Register" style="float: right;">
+         <i class="bi bi-sign-intersection"></i> Create New Category 
+         </a>
+      </div>
+   </div>
+   <table class="table table-striped">
+      <thead class="table-light">
+         <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Phone
+            </th>
+
+            <th>
+                Role
+            </th> 
+         
+         </tr>
+      </thead>
+      <tbody> 
+</div>
+
+@section Scripts 
+{
+    <script src="~/js/user.js"></script>
+}

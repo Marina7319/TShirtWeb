@@ -3,16 +3,20 @@
 
     using T_shirt.Data.Repository.IRepository;
 
-    public interface IUnitOfWork
+    public interface IUnitOfWork //: IDisposable
     {
 
         ICategoryRepository Category { get; }
+
+        ITshirtTypeRepository TshirtType { get; }
+
+        // ISP_Call SP_Call { get; }
 
         IProductRepository Product { get; }
 
         IShoppingCartRepository ShoppingCart { get; }
 
-      //  IApplicationUserRepository ApplicationUser { get; }
+        IApplicationUserRepository ApplicationUser { get; }
 
         IOrderDetailRepository OrderDetail { get; }
 

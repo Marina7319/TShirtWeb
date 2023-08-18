@@ -201,13 +201,30 @@ namespace TshirtWeb.Areas.Identity.Pages.Account
                     }
                     else
                     {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        if (user.Role == null)
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return LocalRedirect(returnUrl);
+                        }
+                        else
+                        {
+                            //registering
+                            return RedirectToAction("Index", "User", new { Area="Admin"});
+                        }
                     }
                 }
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
+                }
+
+                if(user.Role  == null)
+                {
+                    await _userManager.AddToRoleAsync(user, StaticDetails.roleAdmin);
+                }
+                else
+                {
+                    await _userManager.AddToRoleAsync(user, user.Role);
                 }
             }
 

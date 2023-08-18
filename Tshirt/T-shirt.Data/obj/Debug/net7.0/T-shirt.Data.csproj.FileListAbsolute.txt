@@ -15,3 +15,5 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Data\obj\De
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Data\obj\Debug\net7.0\T-shirt.Data.pdb
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Data\obj\Debug\net7.0\T-shirt.Data.genruntimeconfig.cache
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Data\obj\Debug\net7.0\ref\T-shirt.Data.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Data\bin\Debug\net7.0\T-shirtStore.Utility.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirt.Data\bin\Debug\net7.0\T-shirtStore.Utility.pdb

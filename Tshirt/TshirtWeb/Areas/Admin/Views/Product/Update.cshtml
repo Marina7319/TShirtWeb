@@ -1,15 +1,27 @@
 ﻿@model ProductViewModel
 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var title = "Create Product";
+}
+
 <div>
     <div class="row">
         <div class="text-center">
+            @if(Model.Product.Id != 0)
+            {
+                //edit
+                title = "Edit Product";
+                  <input asp-for="Product.Id" hidden />
+
+            }
             <div>
                 <h2 class="display-5">@(Model.Product.Id!=0?"Update":"Create") T-shirt</h2>
             </div>
         </div>
     </div>
     <div>
-        <form method="post" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data">        
             <input asp-for="Product.Id" hidden />
              <input asp-for="Product.ImageUrl" hidden />
     <div>
@@ -50,14 +62,9 @@
         </div>
                 <div> 
            <label asp-for="Product.ImageUrl" ></label>
-            <input  type="file" name ="file" class="form-control" />
-             
-           
+            <input  type="file" name ="file" class="form-control" />        
         </div>
-
-
-
-        <div>
+       @* <div>
             <div role="group">
                @if(Model.Product.Id  != 0)
                         {
@@ -75,9 +82,17 @@
                  Back to List
         </a>
             </div>
-            </div>
-        </div>
-    </div>
+            </div> *@
+            @if (Model.Product.Id != 0)
+            {
+                        <partial name="_EditAndBackToListButton" model="Model.Product.Id" />
+                    }
+                    else
+                    {
+                        <partial name="_CreateAndBackToListButton" />
+                    }
+        @*</div>
+    </div>*@
 </form>
     </div>
 </div>

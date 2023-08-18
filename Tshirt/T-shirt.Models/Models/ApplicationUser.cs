@@ -4,6 +4,7 @@
     using Microsoft.AspNetCore.Identity;
 
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class ApplicationUser : IdentityUser
     {
@@ -18,6 +19,16 @@
         public string? State { get; set; }
 
         public string? PostalCode { get; set; }
+
+        public int? CompanyId { get; set; }
+
+        [ForeignKey(nameof(CompanyId))]
+
+        public Company Company { get; set; }
+
+        [NotMapped]
+
+        public string Role { get; set; }
      
     }
 }

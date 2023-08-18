@@ -10,7 +10,7 @@ using T_shirt.Data.Data;
 
 namespace T_shirt.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(TshirtStoreDbContext))]
     [Migration("20230725135557_addPRoductsToDb")]
     partial class addPRoductsToDb
     {

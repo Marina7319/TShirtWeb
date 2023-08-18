@@ -9,10 +9,10 @@
 
     using T_shirt.Models.Models;
 
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    public class TshirtStoreDbContext : IdentityDbContext<IdentityUser>
     {
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public TshirtStoreDbContext(DbContextOptions<TshirtStoreDbContext> options)
             : base(options)
         {
 
@@ -20,10 +20,13 @@
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<OrderHeader> OrderHeaders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<TshirtType> TshirtTypes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

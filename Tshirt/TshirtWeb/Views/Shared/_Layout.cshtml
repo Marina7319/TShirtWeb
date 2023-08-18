@@ -27,9 +27,7 @@
                      <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
                      </li>
-                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                     </li>  
+         
                                            
                      @if (User.IsInRole(StaticDetails.roleAdmin))
                      {
@@ -39,10 +37,12 @@
                         </a>
                         <ul class="dropdown-menu">
                            <li><a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a></li>
-                           <li><a class="dropdown-item" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a></li> 
+                           <li><a class="dropdown-item" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a></li>       
+                           <li><a class="dropdown-item" asp-area="Admin" asp-controller="User" asp-action="Index">User</a></li>
                         </ul>
                      </li>
                      }
+         
                   </ul>
                   <partial name ="_LoginPartial" />
                </div>
@@ -55,7 +55,7 @@
             @RenderBody()
          </main>
       </div>
-      <footer class="border-top bg-primary footer text-muted">
+      <footer class="border-top footer text-muted bg-primary">
          <div class="text-center">
             &copy; <i class="bi bi-calendar-day"></i> @DateTime.UtcNow.Year T-shirt Web 
          </div>

@@ -561,3 +561,5 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\refs\WindowsBase.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Stripe.net.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Dapper.dll

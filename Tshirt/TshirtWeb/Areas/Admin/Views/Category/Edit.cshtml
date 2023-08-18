@@ -1,7 +1,16 @@
 ﻿@model Category
 
+@{
+    var title = "Create Category";
+}
+
 <div>
-   <div>
+    @if(Model.Id != 0)
+    {
+        //edit 
+        title = "Edit Category";
+    }
+    <div>
       <div class="row">
          <div class="text-center">
             <h2 class="display-5">T-shirt Category</h2>
@@ -25,15 +34,23 @@
                <input asp-for="DisplayOrder" type="text"  class="form-control" />
                <span asp-validation-for="DisplayOrder"></span>
             </div>
-            <div role="group">
-               <div>
+            <div role="group">  @if(Model.Id != 0)
+                    {
+                        <partial name="_EditAndBackToListButton" model = "Model.Id" />
+                    }
+                    else
+                    {
+                        <partial name="_CreateAndBackToListButton" />
+                    }
+              
+                    @*  <div>
                   <button type="submit"  style="width:150px" class="btn btn-outline-primary">Update</button>
                </div>
                <div >
                   <a asp-controller="Category" asp-action="Index"  style="width:150px" class="btn btn-outline-secondary">
                   Back to List
                   </a>
-               </div>
+               </div> *@
             </div>
          </div>
       </form>

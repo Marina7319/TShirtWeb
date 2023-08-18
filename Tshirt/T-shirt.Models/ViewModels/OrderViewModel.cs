@@ -10,9 +10,9 @@ namespace T_shirt.Models.ViewModels
     public class OrderViewModel
     {
 
-       // public OrderHeader OrderHeader { get; set; }
+        public OrderHeader OrderHeader { get; set; }
 
-      //  public IEnumerable<OrderDetail> OrderDetail { get; set; }
+        public IEnumerable<OrderDetail> OrderDetail { get; set; }
 
     }
 }

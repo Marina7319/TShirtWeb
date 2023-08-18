@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HZtwetgFoCbYBojwnDPbrRocE43bISMMuBm2HhCpej0=",
+  "Hash": "EdsIxGn7I3lGEhW/JoUkXTNnSKGAHpHwx9ito1vqcQM=",
   "Source": "TshirtWeb",
   "BasePath": "_content/TshirtWeb",
   "Mode": "Default",
@@ -1173,6 +1173,23 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\1d888151-f230-499d-9f56-b5671eb3724f.jpg"
     },
     {
+      "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\images\\product\\26a9292b-ea71-480a-82d6-3cbed29e5246.jpg",
+      "SourceId": "TshirtWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\",
+      "BasePath": "_content/TshirtWeb",
+      "RelativePath": "images/product/26a9292b-ea71-480a-82d6-3cbed29e5246.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\26a9292b-ea71-480a-82d6-3cbed29e5246.jpg"
+    },
+    {
       "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\images\\product\\34d30c13-a3c2-4dc0-866a-cb78fc4f6937.jpg",
       "SourceId": "TshirtWeb",
       "SourceType": "Discovered",
@@ -1188,23 +1205,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\34d30c13-a3c2-4dc0-866a-cb78fc4f6937.jpg"
-    },
-    {
-      "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\images\\product\\4bf42ea2-1a23-4376-887c-a89e7117fda5.png",
-      "SourceId": "TshirtWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\",
-      "BasePath": "_content/TshirtWeb",
-      "RelativePath": "images/product/4bf42ea2-1a23-4376-887c-a89e7117fda5.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\4bf42ea2-1a23-4376-887c-a89e7117fda5.png"
     },
     {
       "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\images\\product\\4f253ae1-2c0b-4889-8f17-a6f5c124738a.jpg",
@@ -1275,6 +1275,23 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\b5d21ebe-ad2f-408a-8ba0-3f07c9e3fffe.jpg"
     },
     {
+      "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\images\\product\\dac4fa49-5596-4274-9c01-55825938a38f.jpg",
+      "SourceId": "TshirtWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\",
+      "BasePath": "_content/TshirtWeb",
+      "RelativePath": "images/product/dac4fa49-5596-4274-9c01-55825938a38f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\dac4fa49-5596-4274-9c01-55825938a38f.jpg"
+    },
+    {
       "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\images\\product\\e9e581d0-3558-47fb-9ff5-c3bcbdb38311.jpg",
       "SourceId": "TshirtWeb",
       "SourceType": "Discovered",
@@ -1290,6 +1307,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\e9e581d0-3558-47fb-9ff5-c3bcbdb38311.jpg"
+    },
+    {
+      "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\js\\company.js",
+      "SourceId": "TshirtWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\",
+      "BasePath": "_content/TshirtWeb",
+      "RelativePath": "js/company.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\company.js"
     },
     {
       "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\js\\order.js",
@@ -1341,6 +1375,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\js\\tshirtType.js",
+      "SourceId": "TshirtWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\",
+      "BasePath": "_content/TshirtWeb",
+      "RelativePath": "js/tshirtType.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tshirtType.js"
+    },
+    {
+      "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\js\\user.js",
+      "SourceId": "TshirtWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\",
+      "BasePath": "_content/TshirtWeb",
+      "RelativePath": "js/user.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\user.js"
     },
     {
       "Identity": "D:\\C#WEB\\ASP.NETAdvancedJune2023\\T-ShirtWeb\\TShirtWeb\\Tshirt\\TshirtWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

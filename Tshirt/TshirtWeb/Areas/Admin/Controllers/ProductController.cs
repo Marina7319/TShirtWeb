@@ -26,9 +26,9 @@
 
         private readonly IUnitOfWork _unitOfWork;
 
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IWebHostEnvironment _webHostEnvironment; // uploading images on the server
 
-        public ProductController(IUnitOfWork db, IWebHostEnvironment webHostEnvironment)
+        public ProductController(IUnitOfWork db, IWebHostEnvironment webHostEnvironment) // ProductController()
         {
 
             _unitOfWork = db;
@@ -37,14 +37,14 @@
         }
 
 
-        public IActionResult Index()
+        public IActionResult Index() // Index()
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
 
             return View(objProductList);
         }
 
-        public IActionResult Update(int? id)
+        public IActionResult Update(int? id) // Update(int? id)
         {
 
             ProductViewModel productViewModel = new()
@@ -70,12 +70,14 @@
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
 
-        public IActionResult Update(ProductViewModel productViewModel, IFormFile? file)
+        public IActionResult Update(ProductViewModel productViewModel, IFormFile? file) // Update(ProductViewModel productViewModel, IFormFile? file)
         {
             if (ModelState.IsValid)
             {
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
+           
 
                 if (file != null)
                 {
