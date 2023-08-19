@@ -1,10 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using T_shirt.Data.Data;
-using T_shirt.Data.Repository.IRepository;
-using T_shirt.Models.Models;
-
-namespace T_shirt.Data.Repository
+﻿namespace T_shirt.Data.Repository
 {
+
+    using Microsoft.EntityFrameworkCore;
+
+    using T_shirt.Data.Data;
+
+    using T_shirt.Data.Repository.IRepository;
+
+    using T_shirt.Models.Models;
+
     public class UserRepository : IUserRepository
     {
 

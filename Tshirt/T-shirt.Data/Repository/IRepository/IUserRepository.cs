@@ -2,6 +2,7 @@
 {
 
     using T_shirt.Models.Models;
+
     public interface IUserRepository
     {
         Task<IEnumerable<ApplicationUser>> GetAllUsers();
