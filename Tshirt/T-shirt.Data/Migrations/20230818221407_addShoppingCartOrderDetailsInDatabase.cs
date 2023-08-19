@@ -1,13 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿#nullable disable
 
 namespace T_shirt.Data.Migrations
 {
-    /// <inheritdoc />
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
+
     public partial class addShoppingCartOrderDetailsInDatabase : Migration
     {
-        /// <inheritdoc />
+    
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
@@ -52,7 +53,7 @@ namespace T_shirt.Data.Migrations
                 onDelete: ReferentialAction.Cascade);
         }
 
-        /// <inheritdoc />
+
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(

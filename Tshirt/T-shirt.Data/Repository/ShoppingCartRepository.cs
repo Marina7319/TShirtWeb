@@ -7,7 +7,7 @@
 
     using T_shirt.Models.Models;
 
-    public class ShoppingCartRepository : Repository<ShoppingCart>, IShoppingCartRepository
+    internal class ShoppingCartRepository : Repository<ShoppingCart>, IShoppingCartRepository
     {
         private TshirtStoreDbContext _db;
         public ShoppingCartRepository(TshirtStoreDbContext db) : base(db)

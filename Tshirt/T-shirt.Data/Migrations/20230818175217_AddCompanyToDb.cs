@@ -1,13 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿#nullable disable
 
 namespace T_shirt.Data.Migrations
 {
-    /// <inheritdoc />
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
+
     public partial class AddCompanyToDb : Migration
     {
-        /// <inheritdoc />
+        
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<bool>(
@@ -18,7 +19,7 @@ namespace T_shirt.Data.Migrations
                 defaultValue: false);
         }
 
-        /// <inheritdoc />
+ 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(

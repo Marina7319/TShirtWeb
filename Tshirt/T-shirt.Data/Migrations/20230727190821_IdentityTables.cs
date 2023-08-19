@@ -5,10 +5,10 @@ namespace T_shirt.Data.Migrations
 
     using Microsoft.EntityFrameworkCore.Migrations;
 
-    /// <inheritdoc />
+
     public partial class IdentityTables : Migration
     {
-        /// <inheritdoc />
+     
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -196,7 +196,7 @@ namespace T_shirt.Data.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
         }
 
-        /// <inheritdoc />
+     
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

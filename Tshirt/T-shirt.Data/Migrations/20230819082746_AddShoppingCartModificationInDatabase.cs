@@ -1,19 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿#nullable disable
 
 namespace T_shirt.Data.Migrations
 {
-    /// <inheritdoc />
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
+
     public partial class AddShoppingCartModificationInDatabase : Migration
     {
-        /// <inheritdoc />
+
         protected override void Up(MigrationBuilder migrationBuilder)
         {
 
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
 

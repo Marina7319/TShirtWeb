@@ -1,14 +1,16 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿#nullable disable
 
 namespace T_shirt.Data.Migrations
 {
-    /// <inheritdoc />
+
+    using System;
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
+
     public partial class AddApplicationUserShoppingCartHeader : Migration
     {
-        /// <inheritdoc />
+ 
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -128,7 +130,7 @@ namespace T_shirt.Data.Migrations
                 column: "ProductId");
         }
 
-        /// <inheritdoc />
+
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

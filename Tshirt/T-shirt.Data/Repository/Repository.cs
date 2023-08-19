@@ -1,10 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
-using T_shirt.Data.Data;
-using T_shirt.Data.Repository.IRepository;
-
-namespace T_shirt.Data.Repository
+﻿namespace T_shirt.Data.Repository
 {
+
+    using Microsoft.EntityFrameworkCore;
+
+    using System.Linq.Expressions;
+
+    using T_shirt.Data.Data;
+
+    using T_shirt.Data.Repository.IRepository;
+
     public class Repository<T> : IRepository<T> where T : class
     {
 

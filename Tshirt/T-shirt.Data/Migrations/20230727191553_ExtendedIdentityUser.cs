@@ -5,10 +5,10 @@ namespace T_shirt.Data.Migrations
 
     using Microsoft.EntityFrameworkCore.Migrations;
 
-    /// <inheritdoc />
+
     public partial class ExtendedIdentityUser : Migration
     {
-        /// <inheritdoc />
+
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
@@ -49,7 +49,7 @@ namespace T_shirt.Data.Migrations
                 nullable: true);
         }
 
-        /// <inheritdoc />
+
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(

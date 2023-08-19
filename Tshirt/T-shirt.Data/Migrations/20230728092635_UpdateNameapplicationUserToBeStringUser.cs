@@ -5,10 +5,9 @@ namespace T_shirt.Data.Migrations
 
     using Microsoft.EntityFrameworkCore.Migrations;
 
-    /// <inheritdoc />
     public partial class UpdateNameapplicationUserToBeStringUser : Migration
     {
-        /// <inheritdoc />
+  
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
@@ -57,7 +56,6 @@ namespace T_shirt.Data.Migrations
                 oldMaxLength: 128);
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
