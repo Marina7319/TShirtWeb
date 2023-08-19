@@ -26,10 +26,9 @@
                   <ul class="navbar-nav flex-grow-1">
                      <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
-                     </li>
-         
-                                           
-                     @if (User.IsInRole(StaticDetails.roleAdmin) || User.IsInRole(StaticDetails.roleAdmin))
+                     </li>     
+ 
+                        @if (User.IsInRole(StaticDetails.roleAdmin) || User.IsInRole(StaticDetails.roleAdmin))
                      {
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,6 +38,9 @@
                            <li><a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a></li>
                            <li><a class="dropdown-item" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a></li>       
                         </ul>
+                     </li>
+                                  <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Users List</a>
                      </li>
                      }
          
