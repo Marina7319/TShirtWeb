@@ -1,14 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace T_shirt.Models.Models
+﻿namespace T_shirt.Models.Models
 {
+
+    using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    using System.ComponentModel.DataAnnotations;
+
     public class OrderDetail
     {
         [Key]
