@@ -86,10 +86,10 @@
             return View(categoryFromDb);
         }
 
-       
+
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+
 
 
         public IActionResult Edit(Category obj)
@@ -107,7 +107,7 @@
 
         }
 
-        [HttpDelete]
+
 
         public IActionResult Delete(int? id)
         {

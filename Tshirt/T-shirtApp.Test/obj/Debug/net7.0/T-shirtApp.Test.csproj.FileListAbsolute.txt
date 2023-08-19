@@ -635,3 +635,5 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\Moq.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\Dapper.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\Stripe.net.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\T-shirtApp.Test\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll

@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
-using Stripe;
 using T_shirt.Data.Data;
-using T_shirt.Data.DatabaseInitializer;
 using T_shirt.Data.Repository;
 using T_shirt.Data.Repository.IRepository;
 using T_shirt.Utility;
@@ -51,6 +49,7 @@ builder.Services.AddSession();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
 
 var app = builder.Build();
 

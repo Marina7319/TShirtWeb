@@ -1,15 +1,6 @@
 ﻿@model Category
-
-@{
-    var title = "Create Category";
-}
-
 <div>
-    @if(Model.Id != 0)
-    {
-        title = "Edit Category";
-    }
-    <div>
+   <div>
       <div class="row">
          <div class="text-center">
             <h2 class="display-5">T-shirt Category</h2>
@@ -20,9 +11,6 @@
       <form method="post">
          <input asp-formaction="Id" hidden />
          <div>
-            @*
-            <div asp-validation-summary="ModelOnly"></div>
-            *@
             <div>   
                <label asp-for="Name"></label>
                <input asp-for="Name" type="text" class="form-control"  />
@@ -33,19 +21,19 @@
                <input asp-for="DisplayOrder" type="text"  class="form-control" />
                <span asp-validation-for="DisplayOrder"></span>
             </div>
-            <div role="group">  @if(Model.Id != 0)
-                    {
-                        <partial name="_EditAndBackToListButton" model = "Model.Id" />
-                    }
-                    else
-                    {
-                        <partial name="_CreateAndBackToListButton" />
-                    }                       
+            <div role="group">
+               <div class="row">
+                  <button type="submit"  class="btn btn-primary form-control" asp-route-id="@Model">Update</button>
+               </div>
+               <div class="col">
+                  <a asp-action="Index"  class="btn btn-success form-control">Back To List</a>
+               </div>
             </div>
          </div>
       </form>
    </div>
 </div>
+
 @section Scripts
 {
 @{

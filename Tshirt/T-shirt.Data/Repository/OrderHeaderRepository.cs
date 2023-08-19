@@ -21,7 +21,7 @@ namespace T_shirt.Data.Repository
 
         public void Update(OrderHeader obj)
         {
-            _db.OrderHeaders.Update(obj);
+            _db.Update(obj);
         }
 
         public void UpdateStatus(int id, string orderStatus, string? paymentStatus = null)
@@ -42,7 +42,7 @@ namespace T_shirt.Data.Repository
             var orderFromDb = _db.OrderHeaders.FirstOrDefault(u => u.Id == id);
             if (!string.IsNullOrEmpty(sessionId))
             {
-                orderFromDb.SessionId = sessionId;
+              //  orderFromDb.SessionId = sessionId;
             }
             if (!string.IsNullOrEmpty(paymentIntentId))
             {

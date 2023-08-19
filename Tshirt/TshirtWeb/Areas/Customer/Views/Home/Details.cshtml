@@ -1,72 +1,68 @@
-﻿@model Product
+﻿@model T_shirt.Models.Models.ShoppingCart
 @using T_shirt.Data.Repository
 <form method="post">
-   <div  class="text-center">
-      <div>
-         <div>
-            <div>
-               <h3>@Model.TshirtName</h3>
-               <p> in @Model.Color</p>
+   <input hidden asp-for="ProductId"/>
+   <div class="container backgroundWhite">
+      <div class="card">
+         <div class="card-header bg-light text-light m-lg-0 row container">
+            <div class="col-12 col-md-6">
+               <h1 class= "text-primary">@Model.Product.TshirtName</h1>
+               <p class= "text-primary">@Model.Product.Color</p>
+            </div>
+            <div class="col-12 col-md-6 text-md-right pr-4" >
+               <span class="badge badge-success pt-2" style="height:30px;color:black;">@Model.Product.Category.Name</span>
             </div>
          </div>
-      </div>
-      <div>
-         <div>
-            <div>
-               <div>
-                  <a asp-action="Index" style="width:150px" class="btn btn-outline-primary">
-                  <small>Back to home</small>
-                  </a>
-               </div>
-            </div>
-            <div>
-               <div>
-                  <img style="width: 48rem;" src="@Model.ImageUrl" width="100%" class="rounded" />
-               </div>
-               <div>
-                  <span class="badge">@Model.Category.Name</span>
-               </div>
-               <div>
-                  <h6>
-                     List Price:
-                     <span>
-                     @Model.ListPrice.ToString("c")
-                     </span>
-                  </h6>
-               </div>
-               <div>
-                  <div>
-                     <div>
-                        <h6>
-                           Sizes: 
-                           <span>@Model.Size</span>
-                        </h6>
+         <div class="card-body">
+            <div class="container rounded p-2">
+               <div class="row">
+                  <div class="col-8 col-lg-8">
+                     <div class="row pl-2">
+                        <h5 class="text-muted">Size: @Model.Product.Size</h5>
+                     </div>
+                     <div class="row pl-2">
+                        <h5 class="text-muted pb-2">List Price:<strike>@Model.Product.ListPrice.ToString("c")</strike></h5>
+                     </div>
+                     <div class="row text-center pl-2">
+                        <div class="p-1 col-2 bg-secondary border-bottom">
+                           <div>Quantity</div>
+                        </div>
+                        <div class="p-1 col-2 bg-secondary border-bottom">
+                           <p>1</p>
+                        </div>
+                     </div>
+                     <div class="row pl-2">
+                        <p class="text-secondary">@Html.Raw(Model.Product.Description)</p>
+                     </div>
+                     <div class="row pl-2">
+                        <div class="col-2 text-primary">
+                           <h4>Count</h4>
+                        </div>
+                        <div class="col-10"><input class="form-control" asp-for="Count" /></div>
                      </div>
                   </div>
-               </div>
-               <div>
-                  <p>@Html.Raw(Model.Description)</p>
-               </div>
-               <div>
-                  <div>
-                    <!-- <div>
-                        <span id="inputGroup-sizing-default">
-                        Count
-                        </span>
-                        <input type="number" value="1" class="fomr-control text-end"
-                           aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                     </div>-->
+                  <div class="col-12 col-lg-2 ofset-lg-1 text-center">
+                     <img src="@Model.Product.ImageUrl" width="100%" class="rounded"></img>
                   </div>
                </div>
-               <div>
-                  <div>
-                     <button type="submit" class="btn btn-light">
-                     Add to Cart (Comming Soon...)
-                     </button>
-                  </div>
-               </div> 
+            </div>
+         </div>
+         <div class="card-footer">
+            <div class="row">
+               <div class="col-12 col-md-6 pb-1">
+                  <a class="btn btn-success form-control btn-square btn-lg" asp-action="Index" >Back To Home</a>
+               </div>
+               <div class="col-12 col-md-6 pb-1">
+                  <button
+                     type="submit" 
+                     value="Add to Cart"
+                     class="btn btn-primary bg-gradient w-100 py-2 text-uppercase fw-semibold">
+                  Shopping Cart
+                  </button>
+               </div>
             </div>
          </div>
       </div>
    </div>
 </form>
+

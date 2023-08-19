@@ -21,7 +21,7 @@ namespace T_shirt.Data.Repository
 
         public void Update(OrderDetail obj)
         {
-            _db.OrderDetails.Update(obj);
+            _db.Update(obj);
         }
     }
 }
