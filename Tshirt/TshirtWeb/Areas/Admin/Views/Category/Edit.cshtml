@@ -22,11 +22,11 @@
                <span asp-validation-for="DisplayOrder"></span>
             </div>
             <div role="group">
-               <div class="row">
-                  <button type="submit"  class="btn btn-primary form-control" asp-route-id="@Model">Update</button>
+               <div>
+                  <button type="submit"  class="btn btn-primary form-control">Update</button>
                </div>
-               <div class="col">
-                  <a asp-action="Index"  class="btn btn-success form-control">Back To List</a>
+               <div>
+                  <a asp-controller="Category" asp-action="Index"  class="btn btn-success form-control">Back To List</a>
                </div>
             </div>
          </div>
