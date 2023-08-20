@@ -565,3 +565,5 @@ D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Dapper.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Facebook.dll
 D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.Crm.Sdk.Proxy.dll
+D:\C#WEB\ASP.NETAdvancedJune2023\T-ShirtWeb\TShirtWeb\Tshirt\TshirtWeb\bin\Debug\net7.0\Microsoft.Xrm.Sdk.dll
