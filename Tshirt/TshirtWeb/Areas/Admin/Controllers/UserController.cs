@@ -27,6 +27,12 @@
                 {
                     Id = user.Id,
                     UserName = user.UserName,
+                    PhoneNumber = user.PhoneNumber,
+                    City = user.City,
+                    PostalCode = user.PostalCode,
+                    State = user.State,
+                    StreetAddress = user.StreetAddress,
+                    Name = user.Name
                 };
                 result.Add(userViewModel);
             }

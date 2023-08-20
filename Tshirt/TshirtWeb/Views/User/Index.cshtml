@@ -24,7 +24,24 @@
             <th>
                User Name
             </th>
-            <th></th>
+              <th>
+                Phone Number
+            </th>
+              <th>
+                City
+            </th>
+              <th>
+                Postal Code
+            </th>
+              <th>
+                State
+            </th>
+              <th>
+                Street Addresse
+            </th>
+              <th>
+                Name
+            </th>
          </tr>
       </thead>
       <tbody>
@@ -35,20 +52,24 @@
                @obj.UserName
             </td>
             <td>
-               <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                     <a type="btn btn-success" asp-controller="User" asp-action="Detail" asp-route-id="@obj.Id"
-                        class="btn btn-sm btn-outline-secondary">View</a>
-                     @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                     {
-                     <a asp-controller="User" asp-action="Edit" asp-route-id="@obj.Id" 
-                        class="btn btn-sm btn-outline-secondary">Edit</a>
-                     <a asp-controller="User" asp-action="Delete" asp-route-id="@obj.Id"
-                        class="btn btn-sm btn-outline-secondary">Delete</a>
-                     }
-                  </div>
-               </div>
+                @obj.PhoneNumber
             </td>
+            <td>
+                @obj.City
+            </td>
+            <td>
+                @obj.PostalCode
+            </td>
+            <td>
+                @obj.State
+            </td>
+            <td>
+                @obj.StreetAddress
+            </td>
+            
+             <td>
+                @obj.Name
+            </td>                  
          </tr>
          } 
       </tbody>
